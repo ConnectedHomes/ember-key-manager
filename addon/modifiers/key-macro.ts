@@ -25,8 +25,8 @@ export default abstract class KeyMacroModifier extends Modifier<KeyMacroModifier
   @service keyManager!: KeyManagerService;
 
   private macro: any;
-  protected abstract keyEvent: KeyEvent;
-  protected abstract name: string;
+  protected keyEvent: KeyEvent;
+  protected name: string;
 
   private addMacro() {
     this.macro = this.keyManager.addMacro({
